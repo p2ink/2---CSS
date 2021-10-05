@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素显示模式转换</title>
+    <style>
+        a {
+            width: 320px;
+            height: 35px;
+            background-color: plum;
+            /* 将行内元素转换为块级元素 */
+            display: block;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /* 将块级元素转换为行内元素 */
+            display: inline;
+        }
+
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /*  将行内元素转换为行内块元素 */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a> 是一个行内元素 -->
+    <a href="#">这是一个链接</a>
+    <a href="#">这是一个链接</a>
+    <!-- <div>是一个块级元素 -->
+    <div>我是一个块级元素</div>
+    <div>我是一个块级元素</div>
+    <span>行内元素转换为行内块元素</span>
+    <span>行内元素转换为行内块元素</span>
+
+</body>
+
+</html>

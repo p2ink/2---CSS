@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之后代选择器</title>
+    <style>
+        /* 中国 山东 济南 蓝翔  */
+        /* 让ol 里面的li 全部变为粉色 */
+        ol li {
+            color: pink;
+        }
+
+        ul li a {
+            color: red;
+        }
+
+        .nav li a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>一二三四五</li>
+        <li>上山打老虎</li>
+        <li>老虎没打到</li>
+
+    </ol>
+    <ul>
+        <li>一二三四五</li>
+        <li>上山打老虎</li>
+        <li>老虎没打到</li>
+        <li><a href="#">我是红色</a></li>
+    </ul>
+    <ul class="nav">
+        <li>一二三四五</li>
+        <li>上山打老虎</li>
+        <li>老虎没打到</li>
+        <li><a href="#">我是黄色</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之并集选择器</title>
+    <style>
+        /* 把熊大和熊二变为粉色 */
+        /* div,
+        p {
+            color: pink;
+        } */
+
+        /* 把熊大熊二和佩奇一家变为粉色 */
+        div,
+        p,
+        .nav li {
+            color: pink;
+        }
+
+        /* 约定的语法规范，我们并集选择器喜欢竖着写 */
+        /* 一定要注意，最后一个选择器，不需要加逗号 */
+    </style>
+</head>
+
+<body>
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="nav">
+        <li>小猪佩奇</li>
+        <li>猪爸爸</li>
+        <li>猪妈妈</li>
+
+    </ul>
+</body>
+
+</html>
